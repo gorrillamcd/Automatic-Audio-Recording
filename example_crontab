@@ -1,0 +1,4 @@
+# m h dom mon dow command
+# This entry would run a command/script at 8:00 in the morning every weekday from February through June
+00 08 * 02-06 1-5 /path/to/script
+
