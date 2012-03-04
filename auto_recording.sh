@@ -18,11 +18,14 @@
 
 # Set working directory and username variables and change to that directory
 username=username # <-----set username
-workdir="/home/$username/recording/"
+workdir="/home/$username/auto_record_script/"
 cd "$workdir"
 
 # Set where the schedule file is. This determines both the name of the class and duration
 schedule="./recording_schedule" # <-----set schedule directory
+
+# Set variables for transferring the recording to the server
+server='/path/to/server' # <-----set mount point for server share
 
 # Check_errors function and Logfile variable
 log="./auto_recording.log" # <-----set logfile directory
@@ -59,17 +62,15 @@ dur=$(($duration*3600)) # Make it easy on people and convert hours to seconds fo
 card=0 # <-----Set variable for correct sound card. Use alsamixer to find which one it is
 vol='100%' # <-----Set volume for microphone input
 
-# Set variables for transferring the recording to the server
-server='/path/to/server' # <-----set mount point for server share
-
-if [ "$mon" -gt "6" ]; then  # Find what semester we're in and set the $semester variable. This is useful for schools to organize recordings by semester.
+# Find what semester we're in and set the $semester variable. This is useful for schools to organize recordings by semester.
+if [ "$mon" -gt "6" ]; then
 		semester="Agosto_Diciembre"
 	else
 		semester="Febrero_Mayo"
 fi
 
-finaldir="$server/Audio/$year/$semester/$recording"/"$date"_"$recording".mp3
 # This is where the file will be saved on the server.
+finaldir="$server/Audio/$year/$semester/$recording"/"$date"_"$recording".mp3
 # TODO: All directories must be made ahead of time for it to work.
 
 ####### END VARIABLES SECTION #######
