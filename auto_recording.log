@@ -1,0 +1,33 @@
+------------------------------------
+Tue Jan 31 14:07:22 PST 2012
+------------------------------------
+SUCCESS: Master Output Volume muted..
+SUCCESS: Mic set to 100%..
+Starting to record keynote.
+SUCCESS: arecord and LAME worked perfect..
+SUCCESS: Transfer successful..
+Tue Jan 31 15:37:35 PST 2012 : Finished recording keynote
+-----------------------------------------------------------
+
+------------------------------------
+Tue Jan 31 16:32:01 PST 2012
+------------------------------------
+SUCCESS: Master Output Volume muted..
+SUCCESS: Mic set to 100%..
+Starting to record .
+SUCCESS: arecord and LAME worked perfect..
+SUCCESS: Transfer successful..
+Tue Jan 31 18:02:13 PST 2012 : Finished recording 
+-----------------------------------------------------------
+
+------------------------------------
+Tue Jan 31 21:04:16 PST 2012
+------------------------------------
+SUCCESS: Master Output Volume muted..
+SUCCESS: Mic set to 100%..
+Starting to record test12.
+ERROR # 130 : arecord or LAME failed. Check Exit Status for more info..
+ERROR # 1 : Transfer of recording to server failed!!!!!!.
+Tue Jan 31 21:04:24 PST 2012 : Finished recording test12
+-----------------------------------------------------------
+

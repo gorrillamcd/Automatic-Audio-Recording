@@ -1,9 +1,9 @@
-# This is the recording schedule for the auto recording script. Each recording must be added in this format in order to be read correctly by the script.
+# This is the class schedule for the class recording script. Each class must be added in this format in order to be read correctly by the script.
 
 #Note-- Do not put colons anywhere except when adding classes to the schedule. Colons are used by the script to find the appropriate
 #	class name and colons in other places might cause unexpected results.
 
-# First digit-Day, Second Two Digits-Hour, recording name, duration (in hours)
+# First digit-Day, Second Two Digits-Hour, Class name, duration (in hours)
 
 # Daily Classes
 108:daily:1
