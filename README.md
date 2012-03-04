@@ -2,8 +2,6 @@
 
 A bash script for automatically (with cron) recording sound which also compresses, names properly, and sends it off to the directory of your choice. Pretty sweet, huh?
 
-**TL;DR**
-
 ## How do I get this thing working?
 
 If you're new to scripting or Linux in general, this section is for you! If you're already familiar with these things, you can skip ahead to the "How to Contribute" section.
