@@ -12,7 +12,7 @@ This script can only be used on Unix systems. Unfortunately, for right now it al
 
 To start using this script for automatic recording, you'll need to do a few things:
 * Make sure you have alsamixer and lame installed
-* Put this directory in your home folder
+* Download this to your home folder. If you have git installed, the easiest way is to run `git clone https://github.com/gorrillamcd/auto_record_script.git`
 * Change certain variables in the script to match your needs and make the script executable
 * Make a list of each recording you want in the recording_schedule file
 * Fill in your crontab with the various times that you will be recording
@@ -32,8 +32,8 @@ If you need to know how to use crontab, here is a good tutorial: http://www.cybe
 
 Your cron entries should look something like this:
 
-Min Hour Day-of-Month Month Day-of-Week Where your script is
-00 	08 	 *            02-06 1-5         /path/to/script
+    Min Hour Day-of-Month Month Day-of-Week Where your script is
+    00 	08 	 *            02-06 1-5         /path/to/script
 
 This entry would run a command/script at 8:00 in the morning every weekday from February through June (a normal school spring semester).
 
@@ -48,7 +48,7 @@ If you want the final directory where the recording will be saved to be differen
 ### Setting variables and chmod
 
 Some variables need to be set the first time you use this script. Look in the script and they are commented fairly obviously. You might also need to make the script executable. That's as easy as:
-chmod +x ./auto_recording.sh
+`chmod +x ./auto_recording.sh`
 
 You'll most likely need to have root privileges to do that. If you have it, use sudo in front of the command. Otherwise, just open a root shell or use su.
 
@@ -58,12 +58,12 @@ There is also a modified version of the script for recording on-demand. When it'
 
 ## How to Contribute
 
-Just fork the directory and submit a pull request. I'll look at it and decide whether or not to incorporate the changes. If you don't know how to contribute via github, contact me using the contact form on my website. Check out the TODO section below for some of the more obvious/necessary improvements.
+Just fork the directory and submit a pull request. If you don't know how to contribute via github, contact me using the contact form on my website. Check out the TODO section below for some of the more obvious/necessary improvements.
 
 ## TODO
 
-* Rewrite volume setting section so it's not dependant on alsamixer.
-* Fix bug with logging where multiple recordings overlap in the log.
-* Set default duration on recordings so that, when no duration is explicitly set, the recording will not go on forever
-* Set a variable for compression options so that it's easier to change
-* Write installation script for creating directories, filling in the class_schedule file, and creating cron entries. After all, this does have "automatic" in the name.
+* Rewrite volume setting section so it's not dependent on alsamixer.
+* Fix bug with logging where multiple recordings overlap in the log (minor)
+* Set default duration on recordings so that, when no duration is explicitly set, the recording will not go on forever (important)
+* Set a variable for compression options so that it's easier to change (important)
+* Write installation script for creating directories, filling in the class_schedule file, and creating cron entries. After all, this does have "automatic" in the name. (important)
